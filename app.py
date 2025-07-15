@@ -991,6 +991,45 @@ def render_games_section(user):
                     del st.session_state.color_sequence
                     st.rerun()
 
+    elif game_choice == "📝 Word Building Game":
+        st.subheader("Word Building Challenge!")
+        target_word = "STREAM"
+        if 'current_word' not in st.session_state:
+            st.session_state.current_word = ""
+        st.write("Build the word by selecting letters in order:")
+        letters = list(target_word)
+        selected_letter = st.selectbox("Choose next letter:", letters, key="word_letter")
+        if st.button("Add Letter"):
+            st.session_state.current_word += selected_letter
+            st.success(f"Current word: {st.session_state.current_word}")
+        if st.session_state.current_word == target_word:
+            st.success("🎉 You built the word correctly!")
+            update_progress(user['id'], "Games", "word_building", 8)
+            if st.button("Play Again (Word Building)"):
+                st.session_state.current_word = ""
+                st.rerun()
+
+    elif game_choice == "🧩 Pattern Matching":
+        st.subheader("Pattern Matching Game!")
+        patterns = [
+            ("🔴🔵🔴🔵", "What comes next?"),
+            ("🟢🟢🟡🟢🟢🟡", "What comes next?"),
+        ]
+        if 'pattern_index' not in st.session_state:
+            st.session_state.pattern_index = 0
+        pattern, question = patterns[st.session_state.pattern_index % len(patterns)]
+        st.write(f"Pattern: {pattern}")
+        answer = st.selectbox("Choose the next symbol:", ["🔴", "🔵", "🟢", "🟡"], key="pattern_symbol")
+        if st.button("Check Pattern"):
+            correct = "🔴" if "🔴🔵" in pattern else "🟡"
+            if answer == correct:
+                st.success("🎉 Correct pattern match!")
+                update_progress(user['id'], "Games", "pattern_matching", 8)
+            else:
+                st.error("Not quite right. Try again!")
+            if st.button("Next Pattern"):
+                st.session_state.pattern_index                
+
 def render_ai_tutor_chat(user):
     st.header("👨‍🏫 Chat with Your AI Tutor")
     
