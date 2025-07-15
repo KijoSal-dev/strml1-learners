@@ -8,7 +8,7 @@ AI Tutor for Special Needs Learners is an interactive, accessible, and personali
 ## Key Features
 
 - User authentication and personalized profiles
-- Adaptive learning activities for Math, Reading.
+- Adaptive learning activities for Math, Reading, Social Skills, Science, and Creative Arts
 - Practice quizzes with instant feedback
 - Fun educational games
 - Progress tracking and achievement badges
