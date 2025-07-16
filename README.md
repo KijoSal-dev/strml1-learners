@@ -102,5 +102,11 @@ Below are some screenshots showcasing different parts of the AI Tutor for Specia
    ![AI tutor page](screenshots\AI tutor page.png)
    
    ```
+### 9. Video demo of the app
+  ## Demo Video
+
+[▶️ Watch the demo video on Google Drive](https://drive.google.com/file/d/1LKNTwmIv0T8URkt7nH9Az5Iqo1ngu0DK/view?usp=sharing)
+
+
 ---
 
