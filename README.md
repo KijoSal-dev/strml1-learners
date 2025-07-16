@@ -16,6 +16,23 @@ AI Tutor for Special Needs Learners is an interactive, accessible, and personali
 - AI-powered chat tutor for guidance and encouragement
 - Data export and user settings management
 
+
+### Alignment with UN Sustainable Development Goals (SDGs)
+
+# This project supports key SDGs:
+
+    SDG 4: Quality Education
+    Promotes inclusive, adaptive, and equitable learning for children with special needs.
+
+    SDG 10: Reduced Inequalities
+    Enhances access to educational resources for underserved learners.
+
+    SDG 3: Good Health & Well-being (indirectly)
+    Supports cognitive and emotional growth, boosting learner confidence.
+
+➡️ Summary:
+This AI Tutor bridges educational gaps for special needs learners—driving inclusion, empowerment, and equal opportunity.
+
 ## Project Implementation Steps
 
 ### 1. Define Problem and Scope
