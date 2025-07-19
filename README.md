@@ -125,5 +125,12 @@ Below are some screenshots showcasing different parts of the AI Tutor for Specia
 [▶️ Watch the demo video on Google Drive](https://drive.google.com/file/d/1LKNTwmIv0T8URkt7nH9Az5Iqo1ngu0DK/view?usp=sharing)
 
 
+### 10. Live App
+
+You can try the AI Tutor for Special Needs Learners live on Streamlit Cloud:
+
+[🌐 Launch the App on Streamlit](https://strml1-learners-nnigl8z9kpbfyjcdvgcwhy.streamlit.app/)
+
+
 ---
 
